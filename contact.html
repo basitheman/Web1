@@ -37,8 +37,14 @@
         <label for="email">Email:</label><br>
         <input type="email" id="email" name="email" size="50"><br><br>
 
-        <label for="phone">Phone:</label><br>
-        <input type="tel" id="phone" name="phone" size="50"><br><br>
+         <label for="phone">Phone:</label><br>
+        <input type="tel" id="phone" name="phone" list="countrycodes" size="50" placeholder="+251 912 345 678">
+        <datalist id="countrycodes">
+          <option value="+1 (USA):"></option>
+          <option value="+44 (UK):"></option>
+          <option value="+99 (India):"></option>
+          <option value="+251 (Ethiopia):"></option>
+        </datalist><br><br>
 
         <fieldset>
           <legend>Request Type</legend>
@@ -92,5 +98,6 @@
 </body>
 
 </html>
+
 
 
